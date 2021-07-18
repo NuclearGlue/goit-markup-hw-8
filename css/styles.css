@@ -1,3 +1,9 @@
 body {
   font-family: 'Roboto';
+  background-color: #e5e5e5;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #2f303a;
 }
