@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto' sans-serif;
-  font-family: 'Railway';
+  font-family: 'Railway' sans-serif;
   background-color: #e5e5e5;
   text-decoration: none;
   color: #212121;
@@ -10,7 +10,7 @@ footer {
   background-color: #2f303a;
 }
 footer address {
-  color: #ffffff;
+  color: #ffffff 60%;
   font-style: normal;
   text-decoration: none;
 }
@@ -21,7 +21,7 @@ p {
 a {
   text-decoration: none;
 }
-h1 {
+body h1 {
   font-size: 44;
   font-weight: 900;
 }
@@ -54,6 +54,7 @@ button {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  color: #ffffff;
 }
 .hero button {
   background: #2196f3;
@@ -66,4 +67,7 @@ button {
 }
 .current {
   color: #2196f3;
+}
+.footer-style {
+  color: (#ffffff, 60%);
 }
