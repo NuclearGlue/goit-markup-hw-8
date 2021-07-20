@@ -57,6 +57,7 @@ button {
   color: var(--active-color);
   text-decoration: none;
   font-weight: bold;
+  font-size: 26px;
 }
 .logo-studio-darken {
   color: #000000;
