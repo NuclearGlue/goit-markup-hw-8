@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Roboto', 'Railway', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   background-color: #e5e5e5;
   --header-color: #ececec;
   --footer-color: #2f303a;
@@ -22,14 +22,16 @@
 .hero-text {
   color: #ffffff;
 }
+.main-nav {
+  font-family: 'Roboto';
+  color: #212121;
+}
 .current {
   color: var(--active-color);
 }
-.main-nav {
-  color: #212121;
-}
+
 .logo-web {
-  font: 'Railway';
+  font-family: 'Raleway';
   color: var(--active-color);
 }
 .logo-studio-darken {
@@ -48,16 +50,15 @@
   background-color: var(--footer-color);
   font-style: normal;
 }
-.footer-style {
-  color: var(--footer-contact-color);
-}
 .street-address {
   color: #ffffff;
+}
+.footer-info {
+  color: rgba(100%, 100%, 100%, 0.6);
 }
 .team {
   background-color: var(--section-color);
 }
-
 .portfolio-buttons:focus {
   background-color: var(--active-color);
 }
@@ -66,5 +67,4 @@ button {
 }
 a {
   text-decoration: none;
-  color: #212121;
 }
