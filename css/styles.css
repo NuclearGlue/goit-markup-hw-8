@@ -28,7 +28,7 @@ body {
   font-weight: bold;
   color: var(--heading-color);
 }
-button {
+.button {
   cursor: pointer;
 }
 .header-style {
