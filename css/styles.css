@@ -28,7 +28,7 @@ body {
   font-weight: bold;
   color: var(--heading-color);
 }
-.button {
+.button-style {
   cursor: pointer;
 }
 .header-style {
@@ -94,7 +94,7 @@ body {
 .features {
   background-color: var(--main-color);
 }
-.quolites-text {
+.features-text {
   line-height: 1.71;
   color: var(--paragraph-color);
 }
