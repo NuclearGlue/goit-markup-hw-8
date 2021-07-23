@@ -117,11 +117,11 @@ body {
   background-color: var(--active-color);
   color: #ffffff;
 }
-.portfolio-heading {
+.portfolio-title {
   font-size: 18px;
   line-height: 2;
   color: var(--heading-color);
-  letter-spacing: 0.6em;
+  letter-spacing: 0.06em;
 }
 .portfolio-text {
   font-size: 16px;
