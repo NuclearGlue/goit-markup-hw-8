@@ -8,44 +8,14 @@
   --active-color: #2196f3;
   --heading-color: #212121;
   --paragraph-color: #757575;
-  --footer-contact-color: rgba(100%, 100%, 100%, 0.3);
 }
 body {
   background-color: var(--main-color);
   color: var(--heading-color);
   font-family: var(--main-font);
   text-decoration: none;
-  line-height: 1.7;
-}
-.hero-title {
-  font-size: 44px;
-  line-height: 1.36;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-.section-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: var(--heading-color);
-}
-.button-style {
-  cursor: pointer;
-}
-.header-style {
-  background-color: var(--main-color);
-}
-.list {
-  list-style: none;
-}
-.hero {
-  background-color: var(--footer-color);
-}
-.hero-button {
-  background-color: var(--active-color);
-  font-weight: 700;
-  font-size: medium;
-  color: #ffffff;
-  line-height: 1.81;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .main-nav-link {
   font-weight: 500;
@@ -71,14 +41,49 @@ body {
 .logo-studio-white {
   color: #ffffff;
 }
-.contacts {
+.list {
+  list-style: none;
+}
+.hero-title {
+  font-size: 44px;
+  line-height: 1.36;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+.button-style {
+  cursor: pointer;
+}
+.header-style {
+  background-color: var(--main-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.hero {
+  background-color: var(--footer-color);
+}
+.hero-button {
+  background-color: var(--active-color);
+  font-weight: 700;
+  font-size: medium;
+  color: #ffffff;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.contacts-link {
   color: var(--paragraph-color);
   text-decoration: none;
 }
 .address-style {
   background-color: var(--footer-color);
   font-style: normal;
-  line-height: 1.71;
 }
 .street-address {
   color: #ffffff;
@@ -88,19 +93,19 @@ body {
   text-decoration: none;
 }
 .footer-info:hover,
-.contacts:hover {
+.contacts-link:hover {
   color: var(--active-color);
 }
 .features {
   background-color: var(--main-color);
 }
+.features-title {
+  text-transform: uppercase;
+}
 .features-text {
-  line-height: 1.71;
   color: var(--paragraph-color);
 }
-.portfolio {
-  background-color: var(--main-color);
-}
+
 .portfolio-buttons {
   font-weight: 500;
   line-height: 1.62;
@@ -115,13 +120,12 @@ body {
   font-size: 18px;
   line-height: 2;
   color: var(--heading-color);
-  letter-spacing: 0, 06em;
+  letter-spacing: 0.6em;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--paragraph-color);
-  letter-spacing: 0, 03em;
 }
 .portfolio-links {
   text-decoration: none;
@@ -141,8 +145,4 @@ body {
 }
 .hidden-heading {
   visibility: hidden;
-}
-.features-title {
-  text-transform: uppercase;
-  letter-spacing: 0, 03em;
 }
