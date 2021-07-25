@@ -82,8 +82,10 @@ body {
   color: var(--paragraph-color);
   text-decoration: none;
 }
-.address-style {
+.footer-style {
   background-color: var(--footer-color);
+}
+.address-style {
   font-style: normal;
 }
 .street-address {
@@ -143,9 +145,16 @@ body {
   color: var(--paragraph-color);
   font-size: 16px;
 }
-.work {
+.work-list {
   background-color: var(--main-color);
 }
 .hidden-heading {
   visibility: hidden;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
