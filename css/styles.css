@@ -125,8 +125,7 @@ h6 {
   background-color: var(--main-color);
   letter-spacing: 0.02em;
   font-weight: 500;
-  border-bottom: 1px;
-  border-color: #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .hero-button {
   border-radius: 4px;
@@ -187,7 +186,13 @@ h6 {
 .features-item {
   margin-right: 30px;
 }
-
+.portfolio {
+  text-align: center;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+}
 .portfolio-buttons {
   font-weight: 500;
   line-height: 1.62;
