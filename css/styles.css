@@ -222,6 +222,8 @@ img {
 .portfolio-title {
   padding-top: 20px;
   padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 2px;
   font-size: 18px;
   line-height: 2;
   color: var(--heading-color);
@@ -231,6 +233,10 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: var(--paragraph-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 2px;
+  padding-bottom: 20px;
 }
 .projects {
   display: flex;
