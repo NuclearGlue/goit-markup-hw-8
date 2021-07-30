@@ -50,8 +50,6 @@ img {
 }
 .header-container {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .logo-web-header {
   display: flex;
@@ -78,9 +76,12 @@ img {
   align-items: center;
 }
 .main-nav-link {
+  display: block;
   font-weight: 500;
   color: var(--heading-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .main-nav-link:hover {
   color: var(--active-color);
