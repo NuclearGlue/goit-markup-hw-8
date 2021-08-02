@@ -253,7 +253,10 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
+.project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project-item-text {
   padding: 24px;
   border-left: 1px solid #eeeeee;
@@ -312,13 +315,32 @@ img {
   height: 1px;
   margin: -1px;
 }
-.icon {
-  display: block;
-  border: 170px 92px;
-  border-color: var(--icon-color);
+.client-link {
+  display: flex;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
 }
-.icon:not(:last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
+}
+.client-link {
+  fill: var(--icon-color);
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--active-color);
+  fill: var(--active-color);
+}
+.client-title {
+  margin-bottom: 50px;
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
 }
 .clients {
   display: flex;
