@@ -8,6 +8,7 @@
   --active-color: #2196f3;
   --heading-color: #212121;
   --paragraph-color: #757575;
+  --icon-color: #afb1b8;
 }
 body {
   background-color: var(--main-color);
@@ -125,6 +126,7 @@ img {
   margin-bottom: 30px;
 }
 .section-title {
+  text-align: center;
   font-size: 36px;
   font-weight: bold;
   color: var(--heading-color);
@@ -261,9 +263,7 @@ img {
 .team {
   background-color: var(--section-color);
 }
-.team-heading {
-  text-align: center;
-}
+
 .team-list {
   display: flex;
   margin-top: 50px;
@@ -311,4 +311,15 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+.icon {
+  display: block;
+  border: 170px 92px;
+  border-color: var(--icon-color);
+}
+.icon:not(:last-child) {
+  margin-right: 30px;
+}
+.clients {
+  display: flex;
 }
