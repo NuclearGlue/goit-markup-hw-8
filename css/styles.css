@@ -72,6 +72,15 @@ img {
 .contacts-link {
   display: block;
 }
+.header-envelope {
+  width: 16px;
+  height: 12px;
+}
+.header-phone {
+  width: 10px;
+  height: 16px;
+}
+
 .contacts-item:not(:first-child) {
   margin-left: 50px;
 }
@@ -185,6 +194,38 @@ img {
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
+.footer {
+  display: flex;
+  justify-content: baseline;
+}
+.footer-social {
+  display: flex;
+  align-items: flex-end;
+}
+.footer-links {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.footer-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--main-color);
+  background-color: rgba(255, 255, 255, 10%);
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--active-color);
+}
 .features {
   display: flex;
 }
@@ -198,6 +239,19 @@ img {
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+.features-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--section-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 .filter-buttons {
   display: flex;
@@ -294,6 +348,33 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-links {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  fill: var(--icon-color);
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-link:hover,
+.social-link:focus {
+  fill: var(--main-color);
+  background-color: var(--active-color);
+}
 .work {
   padding-top: 0;
 }
@@ -307,7 +388,6 @@ img {
 .work-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .hidden-heading {
   position: absolute;
   clip: rect(0 0 0 0);
