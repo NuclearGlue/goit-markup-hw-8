@@ -190,7 +190,7 @@ img {
   font-style: normal;
 }
 .street-address {
-  color: #ffffff;
+  color: var(--main-color);
 }
 .footer-info {
   color: rgba(100%, 100%, 100%, 0.6);
