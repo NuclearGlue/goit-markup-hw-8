@@ -71,14 +71,23 @@ img {
 }
 .contacts-link {
   display: block;
+  color: var(--paragraph-color);
+  fill: var(--paragraph-color);
+}
+
+.contacts-link:hover {
+  color: var(--active-color);
+  fill: var(--active-color);
 }
 .header-envelope {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
 }
 .header-phone {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
 
 .contacts-item:not(:first-child) {
@@ -164,7 +173,6 @@ img {
   padding-bottom: 10px;
 }
 .contacts-link {
-  color: var(--paragraph-color);
   text-decoration: none;
   display: block;
 }
@@ -184,8 +192,7 @@ img {
   color: rgba(100%, 100%, 100%, 0.6);
   text-decoration: none;
 }
-.footer-info:hover,
-.contacts-link:hover {
+.footer-info:hover {
   color: var(--active-color);
 }
 .footer-adress {
