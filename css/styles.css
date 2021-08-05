@@ -70,12 +70,15 @@ img {
   align-items: center;
 }
 .contacts-link {
-  display: block;
+  display: flex;
   color: var(--paragraph-color);
   fill: var(--paragraph-color);
+  text-decoration: none;
+  align-items: center;
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--active-color);
   fill: var(--active-color);
 }
@@ -106,7 +109,8 @@ img {
   padding-bottom: 32px;
 }
 
-.main-nav-link:hover {
+.main-nav-link:hover,
+.main-nav-link:focus {
   color: var(--active-color);
 }
 .current {
@@ -131,9 +135,10 @@ img {
 .hero {
   background-image: linear-gradient(#2f303a28, #2f303a28),
     url('../images/hero-image.jpg'), linear-gradient(#c4c4c4, #c4c4c4);
-  background-repeat: no-repeat, no-repeat;
-  background-position: 50% 50%, 50% 50%;
-
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: var(--heading-color);
   text-align: center;
   padding: 200px 0;
 }
@@ -175,10 +180,7 @@ img {
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-.contacts-link {
-  text-decoration: none;
-  display: block;
+  border-color: transparent;
 }
 
 .footer-style {
@@ -196,7 +198,8 @@ img {
   color: rgba(100%, 100%, 100%, 0.6);
   text-decoration: none;
 }
-.footer-info:hover {
+.footer-info:hover,
+.footer-info:focus {
   color: var(--active-color);
 }
 .footer-adress {
@@ -207,7 +210,7 @@ img {
 }
 .footer {
   display: flex;
-  justify-content: baseline;
+  align-items: baseline;
 }
 .footer-social {
   display: flex;
@@ -215,7 +218,6 @@ img {
 }
 .footer-links {
   margin-left: 70px;
-  margin-top: 12px;
 }
 .footer-title {
   font-size: 14px;
@@ -246,7 +248,6 @@ img {
 }
 .features-text {
   color: var(--paragraph-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -256,7 +257,7 @@ img {
   justify-content: center;
   align-items: center;
   background-color: var(--section-color);
-  padding: 25px 100px;
+  padding: 25px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -318,7 +319,8 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.project-item:hover {
+.project-item:hover,
+.project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -364,9 +366,8 @@ img {
 }
 .team-social-links {
   display: flex;
+  justify-content: center;
   margin-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 .social-link {
   display: flex;
