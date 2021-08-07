@@ -137,7 +137,7 @@ img {
     url('../images/hero-image.jpg'), linear-gradient(#c4c4c4, #c4c4c4);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
   background-color: var(--heading-color);
   text-align: center;
   padding: 200px 0;
@@ -233,7 +233,7 @@ img {
   background-color: rgba(255, 255, 255, 10%);
   width: 44px;
   height: 44px;
-  border-radius: 22px;
+  border-radius: 50%;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -341,11 +341,14 @@ img {
 .team-name {
   font-weight: 500;
   font-size: 16px;
+  line-height: 19px;
 }
 
 .team-position {
   color: var(--paragraph-color);
   font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
 }
 .team-item {
   text-align: center;
