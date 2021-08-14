@@ -1,2 +1,2 @@
-# goit-markup-hw-4
-Homework №4 by Alexandr Sorokin
+# goit-markup-hw-6
+Homework №6 by Alexandr Sorokin
