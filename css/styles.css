@@ -705,6 +705,9 @@ img {
 .checkbox:checked + .agreement .check-icon {
   opacity: 1;
 }
+.agreement-link {
+  color: var(--active-color);
+}
 .submit-button {
   cursor: pointer;
   color: var(--main-color);
