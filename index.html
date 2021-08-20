@@ -389,28 +389,30 @@
       </section>
     </main>
     <!-- Начало footer-->
-    <footer class="footer-style">
+    <footer class="footer-style footer">
       <div class="container footer">
-        <address class="address-style">
+        <div>
           <a href="" class="logo-web"
             >Web<span class="logo-studio-white">Studio</span></a
           >
-          <ul class="list footer-adress">
-            <li class="street-address address-item">
-              г. Киев, пр-т Леси Украинки, 26
-            </li>
-            <li class="address-item">
-              <a href="mailto:mailto:info@devstudio.com" class="footer-info"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-item">
-              <a href="tel:+380991111111" class="footer-info"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <address class="address-style">
+            <ul class="list footer-adress">
+              <li class="street-address address-item">
+                г. Киев, пр-т Леси Украинки, 26
+              </li>
+              <li class="address-item">
+                <a href="mailto:mailto:info@devstudio.com" class="footer-info"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="tel:+380991111111" class="footer-info"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
         <div class="footer-links">
           <h2 class="footer-title">Присоеденяйтесь</h2>
           <ul class="footer-social list">
@@ -515,20 +517,20 @@
             >
             </textarea>
           </label>
+          <label class="agreement-check">
+            <input class="checkbox" type="checkbox" required />
+            <span class="agreement">
+              <svg class="check-icon">
+                <use href="./images/icons.svg#filled-check"></use>
+              </svg>
+            </span>
+            <p class="agreement-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="">Условия договора</a>
+            </p>
+          </label>
+          <button type="submit" class="submit-button">Отправить</button>
         </form>
-        <label class="agreement-check">
-          <input class="checkbox" type="checkbox" required />
-          <span class="agreement">
-            <svg class="check-icon">
-              <use href="./images/icons.svg#filled-check"></use>
-            </svg>
-          </span>
-          <p class="agreement-text">
-            Соглашаюсь с рассылкой и принимаю
-            <a class="agreement-link" href="">Условия договора</a>
-          </p>
-        </label>
-        <button type="submit" class="submit-button">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
