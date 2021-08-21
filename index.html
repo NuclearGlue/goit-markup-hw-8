@@ -389,7 +389,7 @@
       </section>
     </main>
     <!-- Начало footer-->
-    <footer class="footer-style footer">
+    <footer class="footer-style">
       <div class="container footer">
         <div>
           <a href="" class="logo-web"
@@ -446,13 +446,16 @@
             </li>
           </ul>
         </div>
-        <div class="subscription">
+        <form class="subscription">
           <h2 class="footer-title">Подпишитесь на нашу рассылку</h2>
+
           <label class="subscription-label">
             <input
               type="email"
               class="subscription-input"
               placeholder="E-mail"
+              required
+              name="email"
             />
             <button type="submit" class="subscription-button">
               Подпишитесь
@@ -461,7 +464,7 @@
               </svg>
             </button>
           </label>
-        </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -472,7 +475,7 @@
           </svg>
         </button>
         <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
-        <form>
+        <form class="field-margin">
           <label class="fill-field">
             Имя
             <input
