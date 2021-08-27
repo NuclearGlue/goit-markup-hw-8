@@ -1,0 +1,19 @@
+@import '../utils/variables';
+.logo-darken {
+  color: #000000;
+}
+.logo {
+  font-family: getFont('secondary');
+  color: getColor('active');
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+}
+.logo-white {
+  color: getColor('main');
+}

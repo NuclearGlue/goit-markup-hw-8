@@ -13,6 +13,18 @@ $colors: (
   'icon': #afb1b8,
 );
 $shadows: (
-  'standart': 0px 1px 1px rgba(0, 0, 0, 0.12) 0px 4px 4px rgba(0, 0, 0, 0.06)
+  'standart': (
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16),
+  ),
 );
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}
+@function getShadow($key) {
+  @return map-get($shadows, $key);
+}

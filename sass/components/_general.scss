@@ -1,0 +1,60 @@
+@import '../utils/variables';
+body {
+  background-color: getColor('main');
+  color: getColor('heading');
+  font-family: getFont('main');
+  text-decoration: none;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: getColor('heading');
+}
+.button-style {
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+.is-hiden {
+  opacity: 0;
+}
