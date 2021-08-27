@@ -2,29 +2,30 @@
 
 .features {
   display: flex;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: getColor('paragraph');
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: getColor('section');
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
 }
-.features-title {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.features-text {
-  color: var(--paragraph-color);
-}
-.features-item {
+.features__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
-}
-.features-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: getColor('section');
-  padding: 25px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-.features-icon {
-  width: 70px;
-  height: 70px;
 }

@@ -1,10 +1,10 @@
 @import '../utils/variables';
-.filter-buttons {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-buttons {
+.filter__buttons {
   font-weight: 500;
   line-height: 1.62;
   background-color: getColor('section');
@@ -26,59 +26,69 @@
   }
 }
 
-.filter-item {
+.filter__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
 
-.portfolio-title {
-  font-size: 18px;
-  line-height: 2;
-  color: getColor('heading');
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-.portfolio-text {
-  font-size: 16px;
-  line-height: 1.87;
-  color: getColor('paragraph');
-}
-.projects {
+.project {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+
+  &__title {
+    font-size: 18px;
+    line-height: 2;
+    color: getColor('heading');
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  &__type {
+    font-size: 16px;
+    line-height: 1.87;
+    color: getColor('paragraph');
+  }
+
+  &__box {
+    position: relative;
+    overflow: hidden;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+    color: getColor('main');
+    font-size: 18px;
+    line-height: 1.56;
+    transform: translateY(100%);
+    background-color: #2196f3e6;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__text {
+    padding: 24px;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+  }
 }
-.portfolio-links {
+
+.project__link {
   display: block;
   text-decoration: none;
   background: getColor('main');
 
-  &:hover .project-overlay,
-  &:focus .project-overlay {
+  &:hover .project__overlay,
+  &:focus .project__overlay {
     transform: translateY(0);
   }
 }
-.project-box {
-  position: relative;
-  overflow: hidden;
-}
-.project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 63px 24px;
-  width: 100%;
-  height: 100%;
-  color: getColor('main');
-  font-size: 18px;
-  line-height: 1.56;
-  transform: translateY(100%);
-  background-color: #2196f3e6;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.project-item {
+
+.project__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -88,11 +98,4 @@
   &:focus {
     box-shadow: var(--portfolio-shadow);
   }
-}
-
-.project-item-text {
-  padding: 24px;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }

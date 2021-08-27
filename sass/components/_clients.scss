@@ -1,8 +1,13 @@
 @import '../utils/variables';
 .clients {
   display: flex;
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+  }
 }
-.client-link {
+.client__link {
   display: flex;
   border: 1px solid getColor('icon');
   border-radius: 4px;
@@ -20,15 +25,11 @@
     border-color: getColor('active');
   }
 }
-.clients-item {
+.clients__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.client-title {
+.section-title--client {
   margin-bottom: 50px;
-}
-.client-icon {
-  width: 106px;
-  height: 60px;
 }
