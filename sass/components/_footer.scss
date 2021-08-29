@@ -16,10 +16,9 @@
 .address {
   flex-grow: 1;
   font-style: normal;
-
-  &__list {
-    margin-top: 20px;
-  }
+}
+.address__list {
+  margin-top: 20px;
 }
 .street {
   color: getColor('main');
@@ -43,13 +42,11 @@
 
 .footer-social {
   margin-left: 70px;
-
-  &__list {
-    display: flex;
-    align-items: flex-end;
-  }
 }
-
+.footer-social__list {
+  display: flex;
+  align-items: flex-end;
+}
 .footer-social__link {
   display: flex;
   align-items: center;
@@ -75,30 +72,28 @@
 
 .subscription {
   margin-left: 93px;
-
-  &__label {
-    display: flex;
-    align-items: center;
-  }
-
-  &__input {
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    background-color: getColor('footer');
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    padding-left: 15px;
-  }
-
-  &__icon {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    fill: getColor('main');
-  }
+}
+.subscription__label {
+  display: flex;
+  align-items: center;
 }
 
+.subscription__input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: getColor('footer');
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding-left: 15px;
+}
+
+.subscription__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: getColor('main');
+}
 .subscription__button {
   display: flex;
   justify-content: center;

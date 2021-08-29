@@ -1,24 +1,23 @@
 .team {
   display: flex;
-
-  &__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  &__description {
-    color: getColor('paragraph');
-    font-size: 16px;
-    line-height: 19px;
-    margin-top: 10px;
-  }
-  &__box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
+.team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.team__description {
+  color: getColor('paragraph');
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
+}
+.team__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team__item {
   text-align: center;
   background-color: getColor('main');
@@ -34,11 +33,10 @@
   display: flex;
   justify-content: center;
   margin-top: 16px;
-
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
+}
+.social__icon {
+  width: 20px;
+  height: 20px;
 }
 .social__link {
   display: flex;

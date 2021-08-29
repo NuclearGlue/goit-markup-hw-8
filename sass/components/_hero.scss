@@ -7,19 +7,17 @@
   background-color: getColor('heading');
   text-align: center;
   padding: 200px 0;
-
-  &__title {
-    text-align: center;
-    font-size: 44px;
-    line-height: 1.36;
-    color: getColor('main');
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
 }
-
+.hero__title {
+  text-align: center;
+  font-size: 44px;
+  line-height: 1.36;
+  color: getColor('main');
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
 .hero__button {
   border-radius: 4px;
   background-color: getColor('active');
