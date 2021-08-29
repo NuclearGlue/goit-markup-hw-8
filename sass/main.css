@@ -33,13 +33,21 @@ img {
   height: auto;
 }
 
-.list {
+ul {
   list-style: none;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section--no-padding {
+  padding-top: 0;
+}
+
+.section--diff-color {
+  background-color: #f5f4fa;
 }
 
 .container {
@@ -49,11 +57,12 @@ img {
   margin-right: auto;
 }
 
-.section-title {
+.section__title {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   color: #212121;
+  margin-bottom: 50px;
 }
 
 .button-style {
@@ -163,15 +172,7 @@ img {
   margin-left: 50px;
 }
 
-.header-envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.header-phone {
-  width: 10px;
-  height: 16px;
+.nav-contacts__icon {
   margin-right: 10px;
 }
 
@@ -518,15 +519,6 @@ img {
 }
 
 .work {
-  padding-top: 0;
-}
-
-.work__heading {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.work__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,30 +548,25 @@ img {
 }
 
 .team {
-  background-color: #f5f4fa;
-}
-
-.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
 }
 
-.team__name {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
 
-.team__position {
+.team__description {
   color: #757575;
   font-size: 16px;
   line-height: 19px;
   margin-top: 10px;
 }
 
-.team__card {
+.team__box {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -675,10 +662,6 @@ img {
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.section-title--client {
-  margin-bottom: 50px;
 }
 
 .footer {

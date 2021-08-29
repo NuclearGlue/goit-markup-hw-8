@@ -1,24 +1,19 @@
-@import '../utils/variables';
 .team {
-  background-color: getColor('section');
+  display: flex;
 
-  &__list {
-    display: flex;
-    margin-top: 50px;
-  }
-  &__name {
+  &__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
   }
 
-  &__position {
+  &__description {
     color: getColor('paragraph');
     font-size: 16px;
     line-height: 19px;
     margin-top: 10px;
   }
-  &__card {
+  &__box {
     padding-top: 30px;
     padding-bottom: 30px;
   }

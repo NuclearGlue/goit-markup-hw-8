@@ -1,14 +1,5 @@
-@import '../utils/variables';
 .work {
-  padding-top: 0;
-
-  &__heading {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  &__list {
-    display: flex;
-  }
+  display: flex;
 
   &__text {
     content: '';

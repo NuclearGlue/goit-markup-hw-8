@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <!--Начало body и header-->
   <body>
@@ -24,7 +24,7 @@
           <a href="" class="logo nav__logo"
             >Web<span class="logo--darken">Studio</span></a
           >
-          <ul class="nav-main list">
+          <ul class="nav-main">
             <li class="nav-main__item">
               <a href="./index.html" class="nav-main__link">Студия</a>
             </li>
@@ -40,10 +40,10 @@
             </li>
           </ul>
         </nav>
-        <ul class="nav-contacts list">
+        <ul class="nav-contacts">
           <li class="nav-contacts__item">
             <a href="mailto:info@devstudio.com" class="nav-contacts__link">
-              <svg class="header-envelope">
+              <svg class="nav-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -51,7 +51,7 @@
           </li>
           <li class="nav-contacts__item">
             <a href="tel:+380961111111" class="nav-contacts__link">
-              <svg class="header-phone">
+              <svg class="nav-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -103,9 +103,12 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    <p>
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -124,8 +127,10 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Постер, посвященный противостоянию баскетбольных команд
-                    Новый Орлеан и Золотая Звезда
+                    <p>
+                      Постер, посвященный противостоянию баскетбольных команд
+                      Новый Орлеан и Золотая Звезда
+                    </p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -147,8 +152,10 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Логотип ресторана здоровой и вскусной морской кухни. Ловите
-                    волну
+                    <p>
+                      Логотип ресторана здоровой и вскусной морской кухни.
+                      Ловите волну
+                    </p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -170,7 +177,7 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Прайм музыка всегда и везде
+                    <p>Прайм музыка всегда и везде</p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -192,7 +199,7 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Коробки для коробок и для коробок
+                    <p>Коробки для коробок и для коробок</p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -209,7 +216,7 @@
                 <div class="project__box">
                   <img src="./images/inspiration.jpg" alt="Монитор" />
                   <div class="project__overlay">
-                    Вхдохновитесь достижениями современных технологий
+                    <p>Вхдохновитесь достижениями современных технологий</p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -230,7 +237,7 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Частное издание литературы и произведений
+                    <p>Частное издание литературы и произведений</p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -252,7 +259,7 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Лаборатории и наука все для вас
+                    <p>Лаборатории и наука все для вас</p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -274,7 +281,7 @@
                     height="294"
                   />
                   <div class="project__overlay">
-                    Взрастите ваш бизнес вместе с нами
+                    <p>Взрастите ваш бизнес вместе с нами</p>
                   </div>
                 </div>
                 <div class="project__text">
@@ -314,7 +321,7 @@
         </div>
         <div class="footer-social">
           <h2 class="footer__title">Присоеденяйтесь</h2>
-          <ul class="footer-social__list list">
+          <ul class="footer-social__list">
             <li class="footer-social__item">
               <a href="" class="footer-social__link">
                 <svg class="social__icon">
