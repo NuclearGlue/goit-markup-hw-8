@@ -1,5 +1,7 @@
 .team {
-  display: flex;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .team__title {
