@@ -37,20 +37,20 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
 
-  &--no-padding {
-    padding-top: 0;
+.section--no-padding {
+  padding-top: 0;
+}
+.section--diff-color {
+  background-color: getColor('section');
+}
 
-    
-  &--diff-color {
-    background-color: getColor('section');
+@media (max-width: 1199px) {
+  .section--desktop {
+    display: none;
   }
 }
-@media (max-width: 1199px) {
-  .section--desktop{
-      display: none;
-    }
-  }
 .container {
   padding: 0 15px;
   margin-left: auto;
@@ -73,9 +73,11 @@ img {
   color: getColor('heading');
   margin-bottom: 50px;
 }
+
 .button-style {
   cursor: pointer;
 }
+
 .invisible {
   display: none;
 }

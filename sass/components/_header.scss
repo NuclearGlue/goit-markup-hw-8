@@ -61,7 +61,7 @@
     }
   }
   .nav-contacts {
-    margin-left: auto;
+    display: flex;
   }
   .nav-contacts__link {
     display: flex;
@@ -78,77 +78,28 @@
       fill: getColor('active');
     }
   }
-  .nav-contacts__item {
-    &:not(:first-child) {
-      margin-left: 50px;
-    }
-  }
+
   .nav-contacts__icon {
     margin-right: 10px;
   }
 }
-
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nav-contacts {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .nav-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 //Стили для мониторов
 @media (min-width: 1200px) {
-  .nav-main {
-    display: flex;
-  }
-
-  .nav-main__link {
-    position: relative;
-    display: block;
-    color: getColor('heading');
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      color: getColor('active');
-    }
-
-    &--current {
-      color: getColor('active');
-    }
-
-    &--current::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      height: 4px;
-      width: 100%;
-      border-radius: 2px;
-      background-color: getColor('active');
-      bottom: -1px;
-      left: 0%;
-    }
-  }
-  .nav-main__item {
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
   .nav-contacts {
+    align-items: center;
     margin-left: auto;
-    display: flex;
-    align-items: center;
   }
-  .nav-contacts__link {
-    display: flex;
-    color: getColor('paragraph');
-    fill: getColor('paragraph');
-    text-decoration: none;
-    align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      color: getColor('active');
-      fill: getColor('active');
-    }
-  }
   .nav-contacts__item {
     &:not(:first-child) {
       margin-left: 50px;

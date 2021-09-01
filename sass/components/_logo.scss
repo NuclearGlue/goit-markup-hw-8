@@ -14,5 +14,10 @@
   }
 }
 .nav__logo {
-  margin-right: 93px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+  @media (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
