@@ -10,6 +10,10 @@
 }
 //Стили для телефонов
 @media (max-width: 767px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+  }
   .nav-main {
     display: none;
   }
