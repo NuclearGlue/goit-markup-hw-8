@@ -22,7 +22,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
+  width: 450px;
   min-height: 581px;
   padding: 40px;
 
@@ -32,19 +32,22 @@
   background-color: getColor('main');
   box-shadow: getShadow('standart');
   border-radius: 4px;
+  @media (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal__close-icon {
-    width: 11px;
-    height: 11px;
-  }
- .modal__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    margin-bottom: 12px;
-  }
+  width: 11px;
+  height: 11px;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 12px;
+}
 .modal__close-button {
   position: absolute;
   top: 8px;
@@ -72,16 +75,15 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
- 
 }
- .form__icon {
-    position: absolute;
+.form__icon {
+  position: absolute;
 
-    left: 12px;
-    bottom: 14px;
-    cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  left: 12px;
+  bottom: 14px;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .form__field {
   position: relative;
   display: flex;
@@ -156,26 +158,30 @@
 }
 
 .agreement__check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 7px;
-    border-radius: 4px;
-    border: 2px solid;
-    border-color: getColor('heading');
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  border-radius: 4px;
+  border: 2px solid;
+  border-color: getColor('heading');
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .agreement__icon {
-    width: 16px;
-    height: 15px;
-    fill: getColor('main');
+  @media (max-width: 1199px) {
+    line-height: 14px;
   }
+}
 
-  .agreement__link {
-    color: getColor('active');
-  }
+.agreement__icon {
+  width: 16px;
+  height: 15px;
+  fill: getColor('main');
+}
+
+.agreement__link {
+  color: getColor('active');
+}
 .submit-button {
   cursor: pointer;
   color: getColor('main');

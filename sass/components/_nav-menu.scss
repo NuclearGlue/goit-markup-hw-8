@@ -1,14 +1,14 @@
 @media (min-width: 768px) {
-  .nav-menu {
+  .nav-menu__button {
     display: none;
   }
 }
-.nav-menu {
-}
+
 .nav-menu__button {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  margin-bottom: 10px;
   background-color: getColor('main');
   border: 0;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -20,9 +20,10 @@
 }
 .mobile-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 480px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 480px;
   min-height: 796px;
 
   padding-left: 40px;
@@ -37,13 +38,8 @@
 
 .mobile-box__close-button {
   position: absolute;
-  top: 10px;
   right: 15px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  top: 10px;
   width: 40px;
   height: 40px;
 
