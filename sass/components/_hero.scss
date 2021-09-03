@@ -1,6 +1,4 @@
 .hero {
-  width: 100%;
-  height: 100%;
   background-image: linear-gradient(#2f303a28, #2f303a28),
     url('../images/mobile-hero.jpg'), linear-gradient(#c4c4c4, #c4c4c4);
   background-repeat: no-repeat;
@@ -16,7 +14,7 @@
     background-image: linear-gradient(#2f303a28, #2f303a28),
       url('../images/mobile-hero@2x.jpg'), linear-gradient(#c4c4c4, #c4c4c4);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     background-image: linear-gradient(#2f303a28, #2f303a28),
       url('../images/tab-hero.jpg'), linear-gradient(#c4c4c4, #c4c4c4);
   }
@@ -28,10 +26,11 @@
   }
 }
 
-//Секция-герой, изображения с разной ретинной
-@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px) {
+//Секция-герой, изображения с разной ретинной для разных экранов
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: linear-gradient(#2f303a28, #2f303a28),
       url('../images/tab-hero@2x.jpg'), linear-gradient(#c4c4c4, #c4c4c4);
@@ -45,6 +44,8 @@
       url('../images/hero-image@2x.jpg'), linear-gradient(#c4c4c4, #c4c4c4);
   }
 }
+//оформление текста, секции
+
 .hero__title {
   text-align: center;
   font-size: 24px;
@@ -60,6 +61,7 @@
     line-height: 1.36;
   }
 }
+//Кнопка герой
 .hero__button {
   border-radius: 4px;
   background-color: getColor('active');
